@@ -25,25 +25,25 @@ const Header = () => {
         />
         <div className='header__input'>
           <SearchIcon />
-          <input type='text' />
+          <input type='text' placeholder='Search Facebook' />
         </div>
       </div>
 
       <div className='header__middle'>
-        <div className='header__option'>
-          <HomeIcon fontSize='large' />
+        <div className='header__option header__option--active'>
+          <HomeIcon />
         </div>
         <div className='header__option'>
-          <FlagIcon fontSize='large' />
+          <FlagIcon />
         </div>
         <div className='header__option'>
-          <SubscriptionsIcon fontSize='large' />
+          <SubscriptionsIcon />
         </div>
         <div className='header__option'>
-          <StorefrontIcon fontSize='large' />
+          <StorefrontIcon />
         </div>
         <div className='header__option'>
-          <SupervisedUserCircleIcon fontSize='large' />
+          <SupervisedUserCircleIcon />
         </div>
       </div>
 
