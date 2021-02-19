@@ -1,4 +1,4 @@
-import { firebase } from "firebase";
+import firebase from "firebase";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAKbDYisFL3xijIm4Jk_HWGjOmtNYK6D1M",
@@ -10,7 +10,7 @@ const firebaseConfig = {
   measurementId: "G-FL1MECR0BM",
 };
 
-const firebaseApp = firebase.initialzeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
