@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./Header";
-import SideBar from "./SideBar";
-import Feed from "./Feed";
-import Login from "./Login";
+import Header from "./components/header/Header";
+import SideBar from "./components/sidebar/SideBar";
+import Feed from "./components/feed/Feed";
+import Login from "./components/login/Login";
 
 function App() {
   const user = null;
