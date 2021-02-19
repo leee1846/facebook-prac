@@ -9,14 +9,14 @@ import ChatIcon from "@material-ui/icons/Chat";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { useStateValue } from "./../../store/StateProvider";
 
 const SideBar = () => {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className='sidebar'>
-      <SidebarRow
-        src='https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19754.png'
-        title='jake lee'
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title={"COVID-19 Information Center"}
