@@ -3,9 +3,10 @@ import Header from "./components/header/Header";
 import SideBar from "./components/sidebar/SideBar";
 import Feed from "./components/feed/Feed";
 import Login from "./components/login/Login";
+import { useStateValue } from "./store/StateProvider";
 
 function App() {
-  const user = null;
+  const [{ user }, dispatch] = useStateValue();
 
   return (
     <div className='app'>
