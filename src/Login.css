@@ -1,0 +1,40 @@
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.login__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login button {
+  width: 300px;
+  background-color: dodgerblue;
+  color: #eff2f5;
+  font-weight: 800;
+}
+
+.login button:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+
+.login > div > img {
+  object-fit: contain;
+  width: 150px;
+}
+.login > div > p {
+  color: dodgerblue;
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.login > div {
+  display: flex;
+  flex-direction: column;
+}

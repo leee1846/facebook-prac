@@ -15,7 +15,7 @@ const Login = () => {
           alt=''
         />
         <p>facebook</p>
-        <Button type='submit' onClick={signIn}>
+        <Button type='submit' onClick={signIn} className='button'>
           Sign In
         </Button>
       </div>
